@@ -1,10 +1,8 @@
-version: '3'
+version: '2'
 
 services:
   ca.org1.example.com:
     image: hyperledger/fabric-ca:$ARCH-1.0.3
-    networks:
-      - asclepeion-net
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.org1.example.com
@@ -21,8 +19,6 @@ services:
   orderer.example.com:
     container_name: orderer.example.com
     image: hyperledger/fabric-orderer:$ARCH-1.0.3
-    networks:
-      - asclepeion-net
     environment:
       - ORDERER_GENERAL_LOGLEVEL=debug
       - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
@@ -44,8 +40,6 @@ services:
   peer0.org1.example.com:
     container_name: peer0.org1.example.com
     image: hyperledger/fabric-peer:$ARCH-1.0.3
-    networks:
-      - asclepeion-net
     environment:
       - CORE_LOGGING_PEER=debug
       - CORE_CHAINCODE_LOGGING_LEVEL=DEBUG
@@ -92,15 +86,9 @@ services:
   couchdb:
     container_name: couchdb
     image: hyperledger/fabric-couchdb:$ARCH-1.0.3
-    networks:
-      - asclepeion-net
     ports:
       - 5984:5984
     environment:
       - COUCHDB_PASSWORD=
       - COUCHDB_USER=
       - DB_URL=http://localhost:5984/member_db
-
-networks:
-  asclepeion-net:
-    driver: overlay
