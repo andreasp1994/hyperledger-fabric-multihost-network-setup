@@ -75,7 +75,7 @@ services:
       - orderer.example.com:orderer.example.com
     volumes:
         - /var/run/:/host/var/run/
-        - ../crypto_material/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/fabric/msp
+        - ../crypto_material/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/:/etc/hyperledger/fabric/msp
         # - ./:/etc/hyperledger/configtx
         # - ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/peer/msp
         # - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
