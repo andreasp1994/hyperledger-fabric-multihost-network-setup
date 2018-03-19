@@ -82,7 +82,8 @@ services:
       - COUCHDB_USER=
       - DB_URL=http://localhost:5984/member_db
 
-    peer1.org1.example.com:
+# ===================== PEER 1==========================
+  peer1.org1.example.com:
     container_name: peer1.org1.example.com
     image: hyperledger/fabric-peer:$ARCH-1.0.3
     environment:
