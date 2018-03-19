@@ -2,6 +2,8 @@
 
 DELAY=5
 
+docker rm $(docker ps -aq)
+
 docker-compose -f docker-compose-pc1.yml up -d
 
 sleep $DELAY
