@@ -59,6 +59,7 @@ services:
       - 7053:7053
     external_links:
       - orderer.example.com:orderer.example.com
+      - peer1.org1.example.com:peer1.org1.example.com
     volumes:
         - /var/run/:/host/var/run/
         - ./crypto_material/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/:/etc/hyperledger/fabric/msp
@@ -105,6 +106,7 @@ services:
       - 8053:7053
     external_links:
       - orderer.example.com:orderer.example.com
+      - peer0.org1.example.com:peer0.org1.example.com
     volumes:
         - /var/run/:/host/var/run/
         - ./crypto_material/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/:/etc/hyperledger/fabric/msp
