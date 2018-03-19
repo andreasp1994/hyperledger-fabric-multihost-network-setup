@@ -1,0 +1,22 @@
+{
+        "name": "setup1",
+        "type": "hlfv1",
+        "orderers": [
+            {
+                "url" : "grpc://52.174.22.71:7050"
+            }
+        ],
+        "ca": {
+            "url": "http://52.174.22.71:7054",
+            "name": "52.174.22.71"
+        },
+        "peers": [
+            {
+                "requestURL": "grpc://52.174.22.71:7051",
+                "eventURL": "grpc://52.174.22.71:7053"
+            }
+        ],
+        "channel": "mychannel",
+        "mspID": "Org1MSP",
+        "timeout": 300
+    }

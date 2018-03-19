@@ -75,7 +75,7 @@ services:
     volumes:
         - /var/run/:/host/var/run/
         - ./crypto_material/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/:/etc/hyperledger/fabric/msp
-        # - ./:/etc/hyperledger/configtx
+        - ./crypto_material/channel-artifacts/:/etc/hyperledger/configtx
         # - ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/peer/msp
         # - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
     depends_on:
