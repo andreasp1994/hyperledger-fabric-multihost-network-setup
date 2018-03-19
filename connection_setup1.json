@@ -14,6 +14,10 @@
             {
                 "requestURL": "grpc://52.174.22.71:7051",
                 "eventURL": "grpc://52.174.22.71:7053"
+            },
+            {
+                "requestURL": "grpc://52.174.22.71:8051",
+                "eventURL": "grpc://52.174.22.71:8053"
             }
         ],
         "channel": "mychannel",
