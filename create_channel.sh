@@ -42,7 +42,7 @@ createChannel() {
 	setGlobals 0
 
 
-	peer channel create -o 52.174.22.71:7050 -c $CHANNEL_NAME -f ./crypto_material/channel-artifacts/channel.tx >&log.txt
+	peer channel create -o 52.174.22.71:7050 -c $CHANNEL_NAME -f /etc/hyperledger/configtx/channel.tx >&log.txt
 	res=$?
 	cat log.txt
 	verifyResult $res "Channel creation failed"
