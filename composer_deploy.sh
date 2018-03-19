@@ -8,3 +8,7 @@ composer card create -p connection_setup1.json -u PeerAdmin -c Admin@org1.exampl
 composer card import -f PeerAdmin@setup1.card
 
 composer runtime install -c PeerAdmin@setup1 -n asclepeion-network
+
+composer network start --card PeerAdmin@setup1 -l INFO --networkAdmin admin --networkAdminEnrollSecret adminpw --archiveFile asclepeion-network.bna --file networkadmin.card
+
+composer card import --file networkadmin.card
