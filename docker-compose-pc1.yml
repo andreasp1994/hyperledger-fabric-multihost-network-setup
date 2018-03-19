@@ -76,7 +76,7 @@ services:
         - /var/run/:/host/var/run/
         - ./crypto_material/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/:/etc/hyperledger/fabric/msp
         - ./crypto_material/channel-artifacts/:/etc/hyperledger/configtx
-        - ./crypro_material/crypto-config/:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
+        - ./crypto_material/crypto-config/:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
         # - ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/peer/msp
         # - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
     depends_on:
