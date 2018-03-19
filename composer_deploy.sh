@@ -14,3 +14,5 @@ composer network start --card PeerAdmin@setup1 -l INFO --networkAdmin admin --ne
 composer card import --file networkadmin.card
 
 composer network ping -c admin@asclepeion-network
+
+composer transaction submit -c admin@asclepeion-network -d '{"$class":"io.asclepeion.network.SetupDemo"}'
