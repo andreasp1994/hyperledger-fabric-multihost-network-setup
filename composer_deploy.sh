@@ -12,3 +12,5 @@ composer runtime install -c PeerAdmin@setup1 -n asclepeion-network
 composer network start --card PeerAdmin@setup1 -l INFO --networkAdmin admin --networkAdminEnrollSecret adminpw --archiveFile asclepeion-network.bna --file networkadmin.card
 
 composer card import --file networkadmin.card
+
+composer network ping -c admin@asclepeion-network
