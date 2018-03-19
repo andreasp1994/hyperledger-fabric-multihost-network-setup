@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DELAY=5
-ARCH=`uname -m`
+export ARCH=`uname -m`
 
 docker-compose -f docker-compose-pc1.yml up -d
 
