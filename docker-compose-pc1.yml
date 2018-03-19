@@ -112,10 +112,10 @@ services:
 
     depends_on:
       - orderer.example.com
-      - couchdb
+      - couchdb1
       - ca.org1.example.com
 
-  couchdb:
+  couchdb1:
     container_name: couchdb1
     image: hyperledger/fabric-couchdb:$ARCH-1.0.3
     ports:
