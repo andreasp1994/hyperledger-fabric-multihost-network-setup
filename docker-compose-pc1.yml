@@ -59,6 +59,7 @@ services:
       - CORE_PEER_PROFILE_ENABLED=true
       - CORE_PEER_COMMITTER_LEDGER_ORDERER=orderer.example.com:7050
       - CORE_PEER_GOSSIP_IGNORESECURITY=true
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
       - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=asclepeion-net
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org1.example.com:7051
       - CORE_PEER_TLS_ENABLED=false
