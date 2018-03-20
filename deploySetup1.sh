@@ -10,9 +10,9 @@ sleep $DELAY
 
 docker network create --attachable --driver overlay asclepeion-net
 docker network connect asclepeion-net peer0.org1.example.com
-docker network connect asclepeion-net peer1.org1.example.com
+docker network connect asclepeion-net peer3.org1.example.com
 docker network connect asclepeion-net  couchdb
-docker network connect asclepeion-net  couchdb1
+docker network connect asclepeion-net  couchdb3
 docker network connect asclepeion-net ca.org1.example.com
 docker network connect asclepeion-net orderer.example.com
 
