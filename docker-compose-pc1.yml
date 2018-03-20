@@ -54,7 +54,7 @@ services:
       - CORE_PEER_LOCALMSPID=Org1MSP
       - CORE_PEER_VALIDATOR_CONSENSUS_PLUGIN=pbft
       - CORE_PBFT_GENERAL_MODE=batch
-      - CORE_PBFT_GENERAL_N=4
+      - CORE_PBFT_GENERAL_N=2
       - CORE_PBFT_GENERAL_BATCHSIZE=2 
       - CORE_PBFT_GENERAL_TIMEOUT_REQUEST=2s
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
